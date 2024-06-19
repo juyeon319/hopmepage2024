@@ -117,7 +117,7 @@
 			</div>
 		</div>
 		<div class="btn-cont ar">
-			<c:url var="regUrl" value="/board/boardRegist.do${_BASE_PARAM }" />
+			<c:url var="regUrl" value="/board/boardRegist.do" />
 			<a href="${regUrl }" class="btn spot"><i class="ico-check-spot"></i> 글쓰기</a>
 		</div>
 	</div>

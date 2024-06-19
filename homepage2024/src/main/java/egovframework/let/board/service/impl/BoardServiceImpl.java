@@ -31,10 +31,29 @@ public class BoardServiceImpl extends EgovSequenceIdGnrServiceImpl implements Bo
 		return boardDAO.selectBoardListCnt(vo);
 	}
 
-	//게시글 상세정보
+	//게시물 상세정보
 	public BoardVO selectBoard(BoardVO vo) throws Exception {
 		boardDAO.updateViewCnt(vo);
 		return boardDAO.selectBoard(vo);
+	}
+	
+	//게시물 등록
+	public String insertBoard(BoardVO vo) throws Exception {
+		String id = idgenService.getNextStringId();
+		vo.setBoardId(id);
+		boardDAO.insertBoard(vo);
+
+		return id;
+	}
+	
+	//게시물 수정
+	public void updateBoard(BoardVO vo) throws Exception {
+		boardDAO.updateBoard(vo);
+	}
+	
+	//게시물 삭제
+	public void deleteBoard(BoardVO vo) throws Exception {
+		boardDAO.deleteBoard(vo);
 	}
 	
 }

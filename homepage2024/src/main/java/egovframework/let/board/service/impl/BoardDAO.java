@@ -30,4 +30,19 @@ public class BoardDAO extends EgovAbstractMapper{
 	public void updateViewCnt(BoardVO vo) throws Exception {
 		update("boardDAO.updateViewCnt", vo);
 	}
+	
+	//게시물 등록
+	public void insertBoard(BoardVO vo) throws Exception {
+		insert("boardDAO.insertBoard", vo);
+	}
+	
+	//게시물 수정
+	public void updateBoard(BoardVO vo) throws Exception {
+		update("boardDAO.updateBoard", vo);
+	}
+	
+	//게시물 삭제
+	public void deleteBoard(BoardVO vo) throws Exception {
+		delete("boardDAO.deleteBoard", vo);
+	}
 }

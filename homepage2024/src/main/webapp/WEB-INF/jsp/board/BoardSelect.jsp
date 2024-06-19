@@ -60,6 +60,7 @@
 		</div>
 	</div>
 </div>
+
 <script>
 $(document).ready(function()){
 	//게시글 삭제
@@ -70,4 +71,5 @@ $(document).ready(function()){
 	});
 });
 </script>
+
 <c:import url="/template/footer.do" charEncoding="utf-8" />

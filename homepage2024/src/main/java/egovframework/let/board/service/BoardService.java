@@ -12,6 +12,15 @@ public interface BoardService {
 	//게시물 목록 수
 	public int selectBoardListCnt(BoardVO vo) throws Exception;
 	
-	//게시글 상세정보
+	//게시물 상세정보
 	public BoardVO selectBoard(BoardVO vo) throws Exception;
+	
+	//게시물 등록
+	public String insertBoard(BoardVO vo) throws Exception;
+	
+	//게시물 수정
+	public void updateBoard(BoardVO vo) throws Exception;
+	
+	//게시물 삭제
+	public void deleteBoard(BoardVO vo) throws Exception;
 }
