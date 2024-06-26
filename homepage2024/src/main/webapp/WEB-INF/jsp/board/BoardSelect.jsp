@@ -62,13 +62,13 @@
 </div>
 
 <script>
-$(document).ready(function()){
-	//게시글 삭제
-	$("#btn-del").click(function() {
-		if(!confirm("삭제하시겠습니까?")){
-			return false;
-		}
-	});
+$(document).ready(function() {
+    // 게시글 삭제
+    $("#btn-del").click(function() {
+        if(!confirm("삭제하시겠습니까?")){
+            return false;
+        }
+    });
 });
 </script>
 

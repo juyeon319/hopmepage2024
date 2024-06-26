@@ -143,9 +143,11 @@
 	</update>
 	
 	<delete id="boardDAO.deleteBoard" parameterType="egovframework.let.board.service.BoardVO">
-		DELETE 
-			FROM BOARD
+		UPDATE BOARD SET
+			USE_AT = 'N'
 		WHERE BOARD_ID = #{boardId}
+		<if test='mngAt != "Y"'>
+			AND FRST_REGISTER_ID = #{userId}
+		</if>
 	</delete>
-
 </mapper>

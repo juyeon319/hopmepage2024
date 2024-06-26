@@ -43,6 +43,6 @@ public class BoardDAO extends EgovAbstractMapper{
 	
 	//게시물 삭제
 	public void deleteBoard(BoardVO vo) throws Exception {
-		delete("boardDAO.deleteBoard", vo);
+		update("boardDAO.deleteBoard", vo);
 	}
 }
